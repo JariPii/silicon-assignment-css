@@ -27,10 +27,20 @@
   --system-success: #22c55e;
   --system-warning: #ffba08;
   --system-info: #4c82f7;
+
+  /* darkmode */
+  --background-darkmode: var(--gray-800);
+}
+
+.dark {
+  background-color: var(--background-darkmode);
+  color: var(--white);
 }
 
 body {
 }
+
+/* TODO: Add darkmode colors, add darkmode logo, save darkmode to localstorage, check darkmode system settings, finalize measurments, refactor Darkmode selection */
 
 .header {
   display: flex;
