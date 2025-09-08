@@ -9,7 +9,7 @@
 }
 
 :root {
-  --font-display: 'Manrope', sans-serif;
+  font-family: 'Manrope', sans-serif;
 
   --white: #ffffff;
   --gray-900: #0b0f19;
@@ -22,6 +22,7 @@
   --gray-200: #eff2fc;
   --gray-100: #f3f6ff;
   --brand-primary: #6366f1;
+  --brand-primary-hover: #6366f190;
   --system-error: #ef4444;
   --system-success: #22c55e;
   --system-warning: #ffba08;
@@ -29,4 +30,168 @@
 }
 
 body {
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0.5rem auto;
+  padding: 0 0.8rem;
+  height: 50px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+
+  .logo {
+  }
+
+  .darkmode-signin-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .darkmode-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+
+    span {
+      display: none;
+    }
+
+    span::before {
+      content: 'Lightmode';
+    }
+
+    &.dark-mode {
+      span::before {
+        content: 'Darkmode';
+      }
+
+      .switch {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+    }
+
+    .switch {
+      height: 24px;
+      width: 46px;
+      border-radius: 3rem;
+      background-color: var(--gray-600);
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding: 0 0.1rem;
+
+      /* &.dark-mode {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      } */
+
+      .circle {
+        height: 20px;
+        width: 20px;
+        background: var(--white);
+        border-radius: 50%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      span {
+        display: inline;
+      }
+    }
+  }
+
+  .burger-container {
+    width: 30px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    .burger-menu {
+      position: relative;
+      height: 2px;
+      width: 22px;
+      background-color: var(--gray-900);
+      border-radius: 8px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 22px;
+        background-color: var(--gray-900);
+        border-radius: 8px;
+        left: 0;
+      }
+
+      &::before {
+        top: -0.6rem;
+      }
+
+      &::after {
+        top: 0.6rem;
+      }
+
+      &.active {
+        background-color: transparent;
+      }
+
+      &.active::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &.active::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+  }
+
+  .signin-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: inline;
+    }
+
+    .signin-btn {
+      padding: 0.5rem 1rem;
+      background-color: var(--brand-primary);
+      border-radius: 4px;
+      color: var(--white);
+      text-decoration: none;
+      border: 1px solid var(--brand-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      &:hover {
+        background-color: var(--brand-primary-hover);
+        border: 1px solid var(--brand-primary-hover);
+      }
+    }
+  }
 }

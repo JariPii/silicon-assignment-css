@@ -23,6 +23,39 @@
       href="/images/favicon.ico/apple-touch-icon.png"
     />
     <link rel="manifest" href="/images/favicon.ico/site.webmanifest" />
+    <script type="module" src="./js/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a class="logo">
+        <img src="./images/logos/solid_logo.svg" alt="Silicon logo" />
+      </a>
+
+      <!-- Darkmode switch, burger and sign-in button -->
+      <div class="darkmode-signin-container">
+        <!-- Theme switch -->
+        <div id="switch" class="darkmode-switch">
+          <span></span>
+          <div class="switch">
+            <!-- <div id="switch" class="switch"> -->
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <!-- Burger menu -->
+        <div class="burger-container">
+          <div id="burger" class="burger-menu"></div>
+        </div>
+
+        <!-- Sign in button -->
+        <div class="signin-btn-container">
+          <a href="#" class="signin-btn"
+            ><img src="./images/avatars/avatar.svg" alt="" class="avatar" />
+            <span>Sign in / up</span>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
