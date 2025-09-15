@@ -39,6 +39,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TODO: Add darkmode colors, add darkmode logo, save darkmode to localstorage, check darkmode system settings, finalize measurments, refactor Darkmode selection */
@@ -359,6 +363,60 @@ body {
       background-origin: 0;
       bottom: 0;
       right: 10%;
+    }
+  }
+}
+
+.brand-logos-container {
+  display: none;
+
+  @media (min-width: 768px) {
+    max-width: 1320px;
+    display: flex;
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 6rem 0;
+  }
+
+  .brand-logo {
+    @media (min-width: 768px) {
+      display: flex;
+      width: 158.5px;
+      height: 98.54px;
+      padding: 32.8px 8.8px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      width: 196px;
+      height: 100px;
+      padding: 35px 38px 35px 39px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border: 1px solid var(--Gray-300, #e2e5f1);
+      background: var(--White, #fff);
+
+      &:nth-child(n + 5) {
+        display: flex;
+      }
+    }
+
+    &:hover {
+      /* filter: drop-shadow(-20px 0 15px rgba(0, 0, 0, 0.2)); */
+      box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+        0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
     }
   }
 }
