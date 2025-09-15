@@ -51,8 +51,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   max-width: 1320px;
-  /* width: min(100%, 1320px); */
   margin: 0.5rem auto;
   padding: 0 0.8rem;
   height: 50px;
