@@ -431,9 +431,9 @@ main {
   .brand-logo {
     @media (min-width: 768px) {
       display: flex;
-      width: 158.5px;
-      height: 98.54px;
-      padding: 32.8px 8.8px;
+      width: 10rem;
+      height: 6.25rem;
+      padding: 2rem 0.5rem;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
@@ -443,15 +443,15 @@ main {
       }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       display: flex;
-      width: 196px;
-      height: 100px;
-      padding: 35px 38px 35px 39px;
+      width: 12.25rem;
+      height: 6.25rem;
+      padding: 2rem 2.3rem;
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      border-radius: 8px;
+      border-radius: 0.5rem;
       border: 1px solid var(--Gray-300, #e2e5f1);
       background: var(--White, #fff);
 
