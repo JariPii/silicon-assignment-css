@@ -579,3 +579,27 @@ main {
     }
   }
 }
+
+/* MARK: How does it work */
+
+.presentation-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
