@@ -207,7 +207,6 @@ main {
 /* MARK: Hero */
 
 .hero {
-  /* height: 50svh; */
   width: 100%;
   max-width: 1320px;
   display: flex;
@@ -232,7 +231,7 @@ main {
   }
 
   @media (min-width: 1200px) {
-    height: 56.25rem;
+    /* height: 56.25rem; */
     grid-template:
       'title image' auto
       'ingress image' auto
@@ -241,6 +240,7 @@ main {
 
   .hero-title {
     width: 21.875rem;
+    /* width: 21.875rem; */
     /* padding: 1rem; */
     display: flex;
     align-items: center;
@@ -249,17 +249,16 @@ main {
     background: lightcyan;
 
     @media (min-width: 768px) {
-      width: 25.875rem;
-      /* height: auto; */
+      width: 30rem;
+      height: 11rem;
       grid-area: title;
       margin: 0 auto;
-      /* padding: 0 1rem; */
       background: lightcyan;
       display: flex;
     }
 
-    @media (min-width: 768px) {
-      width: 35.125rem;
+    @media (min-width: 1024px) {
+      width: 35rem;
     }
 
     h1 {
@@ -290,6 +289,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: lightblue;
 
     @media (min-width: 768px) {
       grid-area: ingress;
@@ -297,7 +297,13 @@ main {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-left: 1rem;
+      /* padding: 0 1rem; */
+      padding-left: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      align-items: start;
+      justify-content: start;
     }
 
     .hero-ingress {
@@ -375,7 +381,6 @@ main {
 
     @media (min-width: 768px) {
       height: 420px;
-      /* width: 400px; */
       width: 100%;
       display: flex;
       align-items: center;
@@ -416,8 +421,10 @@ main {
 
 .brand-logos-container {
   display: none;
+  justify-content: center;
 
   @media (min-width: 768px) {
+    width: 100%;
     max-width: 1320px;
     display: flex;
     gap: 1.5rem;
@@ -433,10 +440,11 @@ main {
       display: flex;
       width: 10rem;
       height: 6.25rem;
-      padding: 2rem 0.5rem;
+      /* padding: 2rem 0.5rem; */
       justify-content: center;
       align-items: center;
-      flex-shrink: 0;
+      border-radius: 0.5rem;
+      border: 1px solid var(--Gray-300, #e2e5f1);
 
       &:nth-child(n + 5) {
         display: none;
