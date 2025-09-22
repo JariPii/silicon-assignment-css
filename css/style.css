@@ -725,3 +725,89 @@ main {
     }
   }
 }
+
+/* MARK: Testimonials */
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-100);
+  padding: 5rem 19.5rem;
+
+  .testimonials-container {
+    display: flex;
+    gap: 3rem;
+
+    .testimonial-title {
+      width: 20rem;
+      border: 1px solid;
+
+      h2 {
+        color: var(--Gray-900, #0b0f19);
+        font-feature-settings: 'liga' off, 'clig' off;
+
+        /* Heading/H1 */
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 52px */
+      }
+    }
+
+    .testimonials-card-container {
+      display: flex;
+      gap: 1rem;
+
+      .testimonial-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 26rem;
+        gap: 1.5rem;
+        padding: 3rem 1.75rem;
+        border-radius: 8px;
+        background: var(--White, #fff);
+
+        /* shadow / S */
+        box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+          0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+
+        .icon {
+          position: absolute;
+
+          top: -10px;
+          left: 10px;
+
+          img {
+            width: 44;
+            height: 44px;
+          }
+        }
+
+        .stars {
+        }
+
+        .description {
+          p {
+            color: var(--Gray-700, #565973);
+            font-feature-settings: 'liga' off, 'clig' off;
+
+            /* Body/L */
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 28.8px */
+          }
+        }
+
+        .user {
+          display: flex;
+        }
+      }
+    }
+  }
+}
