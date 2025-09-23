@@ -814,3 +814,98 @@ main {
     }
   }
 }
+
+/* MARK: FAQ */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+
+  text-align: center;
+
+  @media (min-width: 768) {
+    flex-direction: column-reverse;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* flex-direction: column-reverse; */
+
+    .faq-info {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .contact-card {
+        width: 21rem;
+        border: 1px solid;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        padding: 1rem;
+
+        a {
+          color: var(--Brand-Primary, #6366f1);
+          background: none;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+
+      .contact-card:last-child {
+        a {
+          color: green;
+        }
+
+        a::after {
+          content: '💀';
+        }
+      }
+    }
+
+    details {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      flex-wrap: wrap;
+      margin: 0.5rem 0;
+      text-align: start;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      &::after {
+        content: '💀';
+      }
+
+      p {
+        max-width: 80%;
+        background: lightgray;
+      }
+    }
+  }
+
+  .contact-us-btn {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border: 1px solid;
+      border-radius: 0.5rem;
+      color: white;
+      background: var(--brand-primary);
+    }
+  }
+}
