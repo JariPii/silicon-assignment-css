@@ -835,6 +835,10 @@ main {
     /* text-align: center; */
     /* flex-direction: column-reverse; */
 
+    .title-container {
+      text-align: center;
+    }
+
     .faq-info {
       display: none;
 
@@ -951,6 +955,18 @@ main {
         padding-block: 1rem;
       }
     }
+
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template: 'contact accordion' / 40% 1fr;
+      .faq-info {
+        grid-area: contact;
+      }
+
+      .accordion {
+        grid-area: accordion;
+      }
+    }
   }
 
   .contact-us-btn {
@@ -963,6 +979,10 @@ main {
       border-radius: 0.5rem;
       color: white;
       background: var(--brand-primary);
+    }
+
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
