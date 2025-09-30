@@ -31,6 +31,9 @@
   color: var(--white-dm);
 }
 
+html {
+  color-scheme: dark;
+}
 *,
 *::before,
 *::after {
