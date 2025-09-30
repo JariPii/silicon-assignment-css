@@ -24,6 +24,8 @@
 
   /* darkmode */
   --background-darkmode: var(--gray-800);
+
+  --background-section-darkmode: var(--White, #fff / 0.04);
 }
 
 .dark {
@@ -31,9 +33,10 @@
   color: var(--white-dm);
 }
 
-html {
+/* html {
   color-scheme: dark;
-}
+} */
+
 *,
 *::before,
 *::after {
@@ -47,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background: var(--gray-900); */
 }
 
 /* MARK: Header */
@@ -978,6 +982,96 @@ main {
 
     @media (min-width: 768px) {
       display: none;
+    }
+  }
+}
+
+/* MARK: Subscribe */
+
+.subscribe-container {
+  max-width: 1320px;
+  background: var(--gray-100);
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  padding: 4rem 0;
+
+  span {
+    display: none;
+  }
+
+  .bell-img-container {
+  }
+
+  .text-container {
+    width: 60%;
+    p {
+      color: #131022;
+      font-family: Manrope;
+      font-size: 21.6px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 30.2px; /* 139.815% */
+    }
+  }
+
+  .input-container {
+    display: flex;
+    .input-icon {
+      background: url('../images/icons/input-icons-bx-envelope.svg') no-repeat
+        0.75rem center;
+      background-size: 1rem;
+      padding-left: 2.5rem;
+      border: 1px solid var(--Gray-400, #d4d7e5);
+
+      border-radius: 0.5rem 0 0 0.5rem;
+      height: 3rem;
+    }
+
+    button {
+      margin: 0;
+      padding: 1rem 2rem;
+      background: var(--Brand-Primary, #6366f1);
+      border-radius: 0 8px 8px 0;
+      border: none;
+      color: var(--White, #fff);
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+      padding: 4rem 1rem;
+    }
+    .text-container {
+      width: 40%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      width: 100%;
+      justify-content: space-around;
+
+      .text-container {
+        width: 30%;
+        span {
+          display: inline;
+        }
+      }
+
+      .input-container {
+        width: 40%;
+      }
+      input {
+        width: 100%;
+      }
     }
   }
 }
