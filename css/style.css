@@ -1075,3 +1075,10 @@ main {
     }
   }
 }
+
+footer {
+  height: 10svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
