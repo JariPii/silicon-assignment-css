@@ -419,9 +419,11 @@
         <h4>Subscribe to our newsletter <span>to stay informed about latest updates</span></h4>
       </div>
       <div class="input-container">
-        <input type="email" name="email" id="email" aria-label='Add email to subscrice to our newsletter'
-          placeholder='Email' class='input-icon'>
-        <button type="submit">Subscribe</button>
+        <form action="" class='form'>
+          <label for="email" class="sr-only">Subscribe to our newsletter</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="input-icon" required>
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </section>
 
