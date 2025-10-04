@@ -17,31 +17,32 @@
 <body>
   <!-- MARK: Header -->
   <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="./images/logos/solid_logo_light.svg" alt="Silicon logo" class="logo-img" />
+      </a>
 
-    <a href="/" class="logo">
-      <img src="./images/logos/solid_logo_light.svg" alt="Silicon logo" class="logo-img" />
-    </a>
+      <!-- Darkmode switch, burger and sign-in button -->
+      <div class="darkmode-signin-container">
+        <label class="darkmode-switch">
+          <input type="checkbox" id="theme-toggle" hidden />
+          <span class='switch-text'></span>
+          <div class="switch">
+            <div class="circle"></div>
+          </div>
+        </label>
 
-    <!-- Darkmode switch, burger and sign-in button -->
-    <div class="darkmode-signin-container">
-      <label class="darkmode-switch">
-        <input type="checkbox" id="theme-toggle" hidden />
-        <span class='switch-text'></span>
-        <div class="switch">
-          <div class="circle"></div>
+        <!-- Burger menu -->
+        <div class="burger-container">
+          <div id="burger" class="burger-menu"></div>
         </div>
-      </label>
 
-      <!-- Burger menu -->
-      <div class="burger-container">
-        <div id="burger" class="burger-menu"></div>
-      </div>
-
-      <!-- Sign in button -->
-      <div class="signin-btn-container">
-        <a href="#" class="signin-btn"><img src="./images/avatars/avatar.svg" alt="" class="avatar" />
-          <span>Sign in / up</span>
-        </a>
+        <!-- Sign in button -->
+        <div class="signin-btn-container">
+          <a href="#" class="signin-btn"><img src="./images/avatars/avatar.svg" alt="" class="avatar" />
+            <span>Sign in / up</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -49,29 +50,31 @@
   <!-- MARK: Hero section refactoring -->
   <main>
     <section class="hero">
-      <div class="hero-title">
-        <h1>Manage All Your Money in One App</h1>
-      </div>
-      <div class="hero-info-container">
-        <div class="hero-ingress">
-          <h2>
-            We offer you a new generation of
-            <span>the mobile banking.</span> Save, spend & manage money in
-            <span>your pocket.</span>
-          </h2>
+      <div class="hero-container">
+        <div class="hero-title">
+          <h1>Manage All Your Money in One App</h1>
         </div>
-        <div class="hero-app-buttons">
-          <a href="#" class="appstore" aria-label="Link to Apples app store">
-            <img src="./images/market-icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" />
-          </a>
-          <a href="#" class="googleplay" aria-label="Link to Google Play">
-            <img src="./images/market-icons/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="" />
-          </a>
+        <div class="hero-info-container">
+          <div class="hero-ingress">
+            <h2>
+              We offer you a new generation of
+              <span>the mobile banking.</span> Save, spend & manage money in
+              <span>your pocket.</span>
+            </h2>
+          </div>
+          <div class="hero-app-buttons">
+            <a href="#" class="appstore" aria-label="Link to Apples app store">
+              <img src="./images/market-icons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" />
+            </a>
+            <a href="#" class="googleplay" aria-label="Link to Google Play">
+              <img src="./images/market-icons/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="hero-img-container">
-        <img src="./images/iphone-graph.svg" alt="" class="phone-back" /><img src="./images/iPhone12.png " alt=""
-          class="phone-front" />
+        <div class="hero-img-container">
+          <img src="./images/iphone-graph.svg" alt="" class="phone-back" /><img src="./images/iPhone12.png " alt=""
+            class="phone-front" />
+        </div>
       </div>
     </section>
 
