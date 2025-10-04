@@ -26,8 +26,7 @@
   --clr-border: var(--gray-200);
   --clr-heading: var(--gray-900);
   --clr-switch-background: var();
-
-  @media (prefers-color-scheme: light) {
+  --clr-font(var(--gray-700)) @media (prefers-color-scheme: light) {
     :root {
       --theme: light;
       color-scheme: light;
@@ -47,6 +46,7 @@
       --background-section: var(--white);
       --clr-border: var(--white);
       --clr-heading: var(--gray-100);
+      --clr-font: white;
 
       .logo-img {
         content: url('../images/logos/solid_logo_DM.svg');
@@ -70,6 +70,7 @@
   --background-section: var(--white);
   --clr-border: var(--white);
   --clr-heading: var(--gray-100);
+  --clr-font: white;
 
   .logo-img {
     content: url('../images/logos/solid_logo_DM.svg');
@@ -163,8 +164,16 @@ main {
     transition: transform 0.3s;
   }
 
+  .switch-text {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+
   #theme-toggle:checked + .switch-text::before {
-    content: 'Dark';
+    content: 'Darkmode';
   }
 
   #theme-toggle:checked ~ .switch {
@@ -180,7 +189,7 @@ main {
   }
 
   .switch-text::before {
-    content: 'Light';
+    content: 'Lightmode';
   }
 
   .burger-container {
@@ -210,6 +219,8 @@ main {
         background-color: var(--gray-900);
         border-radius: 0.5rem;
         left: 0;
+        transition: transform 0.3s ease, top 0.3s ease,
+          background-color 0.3s ease;
       }
 
       &::before {
@@ -569,7 +580,7 @@ main {
     }
 
     p {
-      color: #585c7b;
+      color: var(--clr-font);
 
       font-size: 1.125rem;
       font-weight: 400;
@@ -618,7 +629,7 @@ main {
       p {
         font-weight: 400;
         line-height: 1.6;
-        color: #585c7b;
+        color: var(--clr-font);
       }
     }
   }
@@ -699,7 +710,7 @@ main {
     }
 
     p {
-      color: #585c7b;
+      color: var(--clr-font);
       text-align: center;
       font-family: Manrope;
       font-size: 16px;
@@ -714,8 +725,7 @@ main {
 
 .features-section-2 {
   display: none;
-
-  @media (min-width: 1200px) {
+  color: var(--clr-font) @media (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -832,7 +842,7 @@ main {
 
           .description {
             p {
-              color: var(--gray-700, #565973);
+              color: var(--clr-font);
               font-feature-settings: 'liga' off, 'clig' off;
 
               font-family: Manrope;
