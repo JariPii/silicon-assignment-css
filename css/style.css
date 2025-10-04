@@ -113,7 +113,7 @@ main {
 /* MARK: Header */
 
 .header {
-  width: 100svw;
+  width: 100%;
   background: var(--header-background);
 
   .header-container {
@@ -286,7 +286,7 @@ main {
 /* MARK: Hero */
 
 .hero {
-  width: 100svw;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: radial-gradient(
