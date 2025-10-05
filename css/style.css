@@ -694,7 +694,7 @@ main {
       align-items: center;
       flex-shrink: 0;
       border-radius: 8px;
-      background: #f3f6ff;
+      background: var(--background-section);
     }
 
     .description {
