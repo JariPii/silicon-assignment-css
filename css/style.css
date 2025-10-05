@@ -433,7 +433,7 @@ main {
       position: relative;
 
       .phone-back {
-        width: 18rem;
+        width: 16rem;
         height: auto;
         position: absolute;
         left: 10%;
@@ -443,7 +443,7 @@ main {
       }
 
       .phone-front {
-        width: 18rem;
+        width: 16rem;
         height: auto;
         position: absolute;
         left: 150px;
