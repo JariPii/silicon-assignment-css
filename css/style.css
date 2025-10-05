@@ -949,6 +949,55 @@ main {
 /* MARK: FAQ */
 
 .faq {
+  border: 1px solid;
+
+  width: 90%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+
+  gap: 2rem;
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #b45b5b25;
+
+    gap: 1rem;
+
+    .title-container {
+      padding: 1rem;
+      text-align: center;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .contact-info {
+      display: none;
+    }
+  }
+
+  .contact-us-btn {
+    a {
+      padding: 1rem 2rem;
+      background: var(--brand-primary);
+      border-radius: 0.5rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
+}
+
+/* .faq {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -979,12 +1028,10 @@ main {
 
     .title-container {
       text-align: center;
-      background: pink;
     }
 
     .faq-info {
       display: none;
-      background: salmon;
 
       @media (min-width: 768px) {
         display: flex;
@@ -1000,6 +1047,7 @@ main {
 
       .contact-card {
         width: 21rem;
+        height: 10rem;
         border: 1px solid var(--clr-border);
         border-radius: 0.5rem;
         display: flex;
@@ -1128,7 +1176,7 @@ main {
       display: none;
     }
   }
-}
+} */
 
 /* MARK: Subscribe */
 
